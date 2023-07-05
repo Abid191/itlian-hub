@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-primary{
+    @apply bg-red-500 py-1 px-5 text-white rounded hover:bg-red-600 transition
+}
+.button-secondary{
+    @apply bg-gray-600 py-1 px-5 text-white rounded hover:bg-gray-500 transition
+}
+.my-container{
+    @apply px-2 md:px-10 max-w-[1300px] mx-auto
+}
+
+.active{
+    @apply text-red-500 font-medium 
+}
+
+.input-form{
+    @apply  h-12 border-[1px] border-gray-300  rounded focus:outline-red-300 pl-3 focus:border-[1px] w-full 
+}
